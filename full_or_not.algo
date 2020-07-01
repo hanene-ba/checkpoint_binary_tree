@@ -1,0 +1,15 @@
+FUNCTION full_Or_not(root : ^node) : INTEGER
+
+BEGIN
+    IF (root = NULL) THEN
+        RETURN TRUE ;
+    END_IF
+    IF (root^.node_left = NULL ) AND ( root^.node_right = NULL) THEN
+        RETURN TRUE ;
+    END_IF
+    IF (root^.node_right)AND(root^.node_left) THEN
+        RETURN (full_Or_not(root^node_left) AND (root^.node_right));
+    ELSE 
+        RETURN FALSE;
+    END_IF
+END

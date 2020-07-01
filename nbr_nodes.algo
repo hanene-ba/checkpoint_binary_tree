@@ -1,0 +1,9 @@
+FUNCTION node_nbr( root : ^node) : INTEGER           
+BEGIN
+ IF (root <> NULL ) THEN
+     RETURN node_nbr(root^.node_left)+ 1 node_nbr(root^.node_right);
+ ELSE
+     RETURN 0 ;
+ END_IF
+END
+

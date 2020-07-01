@@ -1,0 +1,12 @@
+FUNCTION nbr_leaf( root : ^node) : INTEGER         
+BEGIN
+ IF (root = NULL ) THEN
+     RETURN 0; 
+ END_IF 
+IF (root^.node_left= NULL ) and (root^.node_right = NULL) THEN
+      RETURN 1 ; 
+ELSE
+      RETURN nbr_leaf(root^.node_left)+nbr_leaf(root^.node_right;)
+END_IF
+END
+

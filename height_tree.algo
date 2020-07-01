@@ -1,0 +1,10 @@
+FUNCTION height_tree( root : ^node) : INTEGER           
+BEGIN
+ IF (root = NULL ) THEN
+     RETURN -1 
+ ELSE 
+     left_height := height_tree(root^.node_left);
+     right_height:= height_tree(root^.node_right);
+     RETURN max (left_height , right_height ) + 1 ; 
+ END_IF
+END

@@ -1,0 +1,11 @@
+FUNCTION FindMax(root : ^node) : INTEGER
+
+BEGIN
+ IF (root = NULL) THEN
+     RETURN -1 ; 
+ ELSE_IF (root^.node_right = NULL) THEN
+     RETURN root^.val;
+ ELSE
+     RETURN FindMax (root^.node_right)
+ END_IF  
+END
