@@ -1,0 +1,22 @@
+ALGORITHM algorithm_principal
+VAR
+    VAR
+    node :	STRUCT
+            val : INTEGER;
+            node_left : ^node ;
+            node_right: ^node ;
+        END_STRUCT 
+BEGIN
+    x :=nbr_nodes(node);
+    y := height_tree(node);
+    z := leaves_nbr(node);
+    MAX := findmax (node); 
+    Fullornot := full_Or_not(node); 
+ Write("nbr of nodes are" x); 
+ Write("height of tree is " y); 
+ Write("nbr of leaves are" z); 
+ Write("max valye if tree is" MAX ); 
+ Write("th binary tree is full tree : " Fullornot ); 
+
+
+END
