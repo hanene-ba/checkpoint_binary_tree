@@ -1,8 +1,0 @@
-ALGORITHM Binary_Trees
-VAR
-    node :	STRUCT
-            val : ^node;
-            node_left : ^node ;
-            node_right: ^node ;
-        END_STRUCT
-BEGIN 
